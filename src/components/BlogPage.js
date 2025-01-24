@@ -8,9 +8,6 @@ const client = createClient({
   accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN, // Environment variable
 });
 
-console.log('Space ID:', process.env.REACT_APP_CONTENTFUL_SPACE);
-console.log('Access Token:', process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN);
-
 const BlogPage = () => {
   const [posts, setPosts] = useState([]);
   const [selectedPost, setSelectedPost] = useState(null); // Track the selected post
