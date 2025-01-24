@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kotisivut/static/css/main.8a67307b.css",
+    "main.js": "/kotisivut/static/js/main.d94fa8ae.js",
+    "static/media/niko1.jpg": "/kotisivut/static/media/niko1.8f272f50f8767c79b0e0.jpg",
+    "static/media/tausta1.png": "/kotisivut/static/media/tausta1.d6c0a6cfdf3826af52a3.png",
+    "static/media/tinkeritLogo.png": "/kotisivut/static/media/tinkeritLogo.c46a98bf25d91f72ca6f.png",
+    "index.html": "/kotisivut/index.html",
+    "main.8a67307b.css.map": "/kotisivut/static/css/main.8a67307b.css.map",
+    "main.d94fa8ae.js.map": "/kotisivut/static/js/main.d94fa8ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a67307b.css",
+    "static/js/main.d94fa8ae.js"
+  ]
+}
