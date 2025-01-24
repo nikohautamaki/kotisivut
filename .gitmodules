@@ -1,3 +1,0 @@
-[submodule "backup-repository"]
-  path = backup-repository
-  url = https://github.com/nikohautamaki/backup-repository.git
