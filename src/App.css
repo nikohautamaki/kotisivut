@@ -1,0 +1,491 @@
+body {
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Critical to ensure full viewport is utilized */
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form label {
+  font-family: 'Space Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #323e55;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.social-and-contact {
+  display: flex;
+  align-items: center;
+}
+
+.social-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 20px;
+  padding-inline: 4px;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+  color: #ea656d;
+}
+
+.contact-button {
+  background-color: #ea656d;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.contact-button:hover {
+  background-color: #e67e22;
+}
+
+.App-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+  /* margin-top: 150px; */
+}
+
+.App-footer {
+  background-color: #323e55;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.App-footer a {
+  color: #ffc107; /* Use a light color to contrast with the blue background */
+  text-decoration: none; /* Optional: removes underline for a cleaner look */
+}
+
+.App-footer a:hover {
+  color: #d09d05; /* Optional: adds a highlight effect when hovering over the link */
+}
+
+
+.App-header h1 {
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.App-main .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 50%;
+  height: auto;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+.description {
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.work-examples-page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.work-example {
+  margin-bottom: 20px;
+}
+
+.work-example h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.work-example p {
+  font-size: 16px;
+  color: #555;
+}
+
+.about-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: inherit;
+}
+
+.about-section h2 {
+  font-size: 2em;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-section li {
+  font-size: 16px;
+  color: #555;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 110vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Left Header Section */
+.header-left-container {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Adjust spacing as needed */
+  width: 40%; /* Limit the width */
+}
+
+.left-header {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Right Header Section */
+.header-right-container {
+  position: absolute;
+  top: 15%; /* Slightly higher than the left header */
+  right: 5%; /* Align fully to the right */
+  width: 40%; /* Limit the width */
+  text-align: right;
+}
+
+.right-header {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff; /* Adjust color as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* New Section - Blue Background */
+.blue-section {
+  background-color: #323e55;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 50px; /* Space between sections */
+  position: relative;
+}
+
+.blue-section-text {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  margin-inline: 30px
+}
+
+.blue-section-container {
+  background-color: #323e55;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+  position: relative;
+}
+
+.blue-section-container::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; /* Adjust arrow height */
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent; /* Half the viewport width */
+  border-right: 50vw solid transparent; /* Half the viewport width */
+  border-top: 40px solid #323e55; /* Matches the background color */
+}
+
+.contact-me-button {
+  display: inline-block;
+  background-color: #ea656d;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  margin-top: 3%;
+}
+
+.contact-me-button:hover {
+  background-color: #e67e22;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Space between containers */
+}
+
+.hero-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.header-left-container, .header-right-container {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.content-section-container {
+  text-align: center;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  background-color: #f9f9f9; /* Light grey background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #323e55;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Styling for first and last name on the same line */
+.form-group-inline {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-group-inline .form-group {
+  flex: 1;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ea656d; /* Focus color matches the button */
+}
+
+/* Styling for the larger email box */
+.form-group.email input {
+  width: 100%;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-button {
+  background-color: #ea656d; /* Button color */
+  color: white;
+  font-size: 16px;
+  font-family: 'Archivo Black', sans-serif;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 3%;
+}
+
+.submit-button:hover {
+  background-color: #e67e22; /* Hover color */
+}
+
+.header-before-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 10%;
+  /* color: #fff; */
+  color: #323e55;
+  text-align: left;
+}
+
+.big-header {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); */
+}
+
+.small-header {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); */
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .form-group-inline {
+    display: block; /* Stacks elements vertically */
+  }
+
+  .App-header {
+    display: block;
+    padding-bottom: 5%;
+  }
+  
+  .social-and-contact {
+    display: block;
+  }
+
+  .form-group-inline .form-group {
+    margin-bottom: 15px; /* Add spacing between stacked fields */
+  }
+
+  .App-main .content {
+    flex-direction: column; /* Stack the image and text vertically */
+    text-align: center; /* Center-align the text for mobile */
+  }
+
+  .content img {
+    margin-bottom: 20px; /* Add spacing between the image and text */
+  }
+
+  .content .text {
+    text-align: center; /* Center the text on mobile */
+  }
+
+  .left-header {
+    font-size: large;
+  }
+
+  .right-header {
+    padding-top: 15%;
+    font-size: large;
+  }
+
+  .header-right-container {
+    top: 20%;
+  }
+  .hero-image {
+    height: 125vh;
+    width: 100%;
+  }
+  .blue-section-text {
+    font-size: x-large;
+  }
+  .blue-section-container::after {
+    border-left: 55vw solid transparent;
+    border-right: 50vw solid transparent;
+    overflow: hidden;
+  }
+
+  .text-section ul {
+    margin: 0 !important;
+  }
+
+  .blue-section-container {
+    width: auto;
+  }
+}

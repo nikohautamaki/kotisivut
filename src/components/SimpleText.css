@@ -1,0 +1,32 @@
+.simple-text-section {
+    padding: 40px;
+    /* background-color: #f4f4f4; */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 8%;
+  }
+  
+  .simple-text-header {
+    font-family: 'Space Mono', monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #323e55; /* Header color */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .simple-text-list {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.1rem;
+    color: #323e55;
+    list-style-type: none;
+    padding-left: 0;
+    /* text-decoration: underline; */
+  }
+  
+  .simple-text-list li {
+    margin-bottom: 10px;
+  }
+  

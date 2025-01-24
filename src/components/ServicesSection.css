@@ -1,0 +1,57 @@
+/* Services Section Styling */
+.services-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 9%;
+    color: #323e55;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px; /* Adds space between cards */
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 22%;
+    min-width: 250px; /* Minimum width for small screens */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    font-size: 40px; /* Adjust icon size */
+    color: #ea656d; /* Icon color */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+.service-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.service-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
